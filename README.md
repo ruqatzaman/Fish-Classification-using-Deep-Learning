@@ -12,7 +12,7 @@ This repository contains a **PyTorch** implementation of a Convolutional Neural 
 
 ---
 
-## 📂 Dataset & Folder Structure
+##  Dataset & Folder Structure
 
 The notebook expects an **image folder dataset** split into `train`, `val`, and `test`, where **each class is a subfolder** containing its images. For example:
 
@@ -45,7 +45,7 @@ TEST_PATH  = 'data/FishImgDataset/test'
 
 ---
 
-## 🧠 Model Overview
+##  Model Overview
 
 A compact CNN defined in `FishClassificationCNN`:
 
@@ -64,7 +64,7 @@ A compact CNN defined in `FishClassificationCNN`:
 
 ---
 
-## 🛠️ Setup
+##  Setup
 
 Tested with **Python 3.10+**. Install dependencies:
 
@@ -81,7 +81,7 @@ pip install jupyter notebook
 
 ---
 
-## 🚀 Training (in Notebook)
+##  Training (in Notebook)
 
 Open the notebook and run cells in order:
 
@@ -104,7 +104,7 @@ Open the notebook and run cells in order:
 
 ---
 
-## ✅ Evaluation
+##  Evaluation
 
 The notebook evaluates on the **test** split and prints:
 
@@ -120,7 +120,7 @@ evaluate_model(model, test_loader, train_dataset.classes)
 
 ---
 
-## 💾 Save & 🔁 Load
+##  Save &  Load
 
 **Save weights** (state_dict only):
 ```python
@@ -145,7 +145,7 @@ model.eval()
 
 ---
 
-## 🔎 Inference on a Single Image
+##  Inference on a Single Image
 
 Use the same normalization as training (no random augmentations):
 
@@ -186,7 +186,7 @@ print("Predicted:", cls)
 
 ---
 
-## 🧾 Project Structure (example)
+##  Project Structure (example)
 
 ```
 .
@@ -199,7 +199,7 @@ print("Predicted:", cls)
         └── test/  ...
 ```
 
-## 🙌 Acknowledgements
+##  Acknowledgements
 
 - Built with **PyTorch** & **Torchvision**.
 - Dataset expected in an **ImageFolder-style** split (`train/val/test` with class subfolders).
